@@ -27,7 +27,6 @@ export async function DELETE(request,{params}){
             status:"true"
         })
     } catch (error) {   
-        console.log(userId)
         console.log(error)
         return NextResponse.json({
             message:"Something went wrong",
